@@ -5,20 +5,20 @@
 class Trufflehog < Formula
   desc "Find credentials all over the place"
   homepage "https://github.com/trufflesecurity/trufflehog"
-  version "3.35.0"
+  version "3.36.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/trufflesecurity/trufflehog/releases/download/v3.35.0/trufflehog_3.35.0_darwin_amd64.tar.gz"
-      sha256 "b7c171f11b9aa3af3bd15a45e8e4422b52516ae0d4beeb3b09bed2e2d539ed5c"
+      url "https://github.com/trufflesecurity/trufflehog/releases/download/v3.36.0/trufflehog_3.36.0_darwin_amd64.tar.gz"
+      sha256 "5674c066bf8c183ce0914dbc00062b7cbc0fcf02fc5ff74d0e5448d0b807dcee"
 
       def install
         bin.install "trufflehog"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/trufflesecurity/trufflehog/releases/download/v3.35.0/trufflehog_3.35.0_darwin_arm64.tar.gz"
-      sha256 "e7ada34ae725bde465a0a37c22102ec04972af6e6da5bb626a3c03db61475e33"
+      url "https://github.com/trufflesecurity/trufflehog/releases/download/v3.36.0/trufflehog_3.36.0_darwin_arm64.tar.gz"
+      sha256 "6fa58e4699a8a57ca48c18077af45356f463675db33be40e10451ac94b9dc53e"
 
       def install
         bin.install "trufflehog"
@@ -28,16 +28,16 @@ class Trufflehog < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/trufflesecurity/trufflehog/releases/download/v3.35.0/trufflehog_3.35.0_linux_arm64.tar.gz"
-      sha256 "d90a1a95cb938fc56147ff4e9d5b8a0af8d433b3b960e731fc9586f12b65ec4a"
+      url "https://github.com/trufflesecurity/trufflehog/releases/download/v3.36.0/trufflehog_3.36.0_linux_arm64.tar.gz"
+      sha256 "ca3bd16dc8e6d22a4613885662b453128dff4a4a9d5faa704106eca030fdb69b"
 
       def install
         bin.install "trufflehog"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/trufflesecurity/trufflehog/releases/download/v3.35.0/trufflehog_3.35.0_linux_amd64.tar.gz"
-      sha256 "c36d68344574df4b475639eed99f50bf186e000c8383c5aceed708b75c3fce9d"
+      url "https://github.com/trufflesecurity/trufflehog/releases/download/v3.36.0/trufflehog_3.36.0_linux_amd64.tar.gz"
+      sha256 "4ffd1ff4667574ea81b88d960473527f58f677fdfcdec3fdea75acbd8aa72c97"
 
       def install
         bin.install "trufflehog"
